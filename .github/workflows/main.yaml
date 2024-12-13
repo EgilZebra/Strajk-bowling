@@ -38,8 +38,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - name: Install modules
-        run: npm install
       - name: Build
         run: npm run build
         - name: Setup Pages
