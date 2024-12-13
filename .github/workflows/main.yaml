@@ -28,3 +28,7 @@ jobs:
         run: npm run coverage
       - name: build
         run: npm run build
+      - uses: themichaelhall/check-code-coverage@v2
+        with:
+          report: coverage.xml
+          required-percentage: 90
