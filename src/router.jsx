@@ -5,11 +5,11 @@ import Confirmation from './views/Confirmation';
 
 const router = createBrowserRouter([
     {
-      path: '/',
+      path: '/Strajk-bowling/',
       element: <Booking />,
     },
     {
-      path: '/confirmation',
+      path: '/Strajk-bowling/confirmation',
       element: <Confirmation />,
     }
 ]);
