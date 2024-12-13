@@ -29,7 +29,7 @@ jobs:
       # - name: build
       #   run: npm run build
       - name: Check the coverage
-      - uses: themichaelhall/check-code-coverage@v2
+        uses: themichaelhall/check-code-coverage@v2
         with:
           report: coverage/clover.xml
           required-percentage: 90
