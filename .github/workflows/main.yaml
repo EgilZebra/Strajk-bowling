@@ -22,6 +22,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - name: use node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
       - name: Install
         run: npm install
       - name: Tests
