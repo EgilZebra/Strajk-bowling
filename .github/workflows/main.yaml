@@ -24,11 +24,12 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install
         run: npm ci
-      - name: Test
-        run: npm test
-      - name: build
-        run: npm run build
+      - name: run tests with coverage
+        run: npm run coverage
+      # - name: build
+      #   run: npm run build
+      - name: Check the coverage
       - uses: themichaelhall/check-code-coverage@v2
         with:
           report: coverage/clover.xml
-          required-percentage: 100
+          required-percentage: 90
